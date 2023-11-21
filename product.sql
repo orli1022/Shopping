@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2023-11-21 09:17:31
+-- 產生時間： 2023-11-21 09:48:21
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `products`
+-- 資料表結構 `product`
 --
 
-CREATE TABLE `products` (
+CREATE TABLE `product` (
   `pID` int(11) NOT NULL,
   `Name` varchar(10) NOT NULL,
   `Price` int(11) NOT NULL,
@@ -36,10 +36,10 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 傾印資料表的資料 `products`
+-- 傾印資料表的資料 `product`
 --
 
-INSERT INTO `products` (`pID`, `Name`, `Price`, `Stock`, `Content`) VALUES
+INSERT INTO `product` (`pID`, `Name`, `Price`, `Stock`, `Content`) VALUES
 (1, '巴斯克乳酪蛋糕', 160, 3, '8吋');
 
 --
@@ -47,9 +47,9 @@ INSERT INTO `products` (`pID`, `Name`, `Price`, `Stock`, `Content`) VALUES
 --
 
 --
--- 資料表索引 `products`
+-- 資料表索引 `product`
 --
-ALTER TABLE `products`
+ALTER TABLE `product`
   ADD PRIMARY KEY (`pID`);
 COMMIT;
 
